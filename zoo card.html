@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zoo Rescue Tracker</title>
+        <style>
+            body{
+                font-family:Arial,sans-serif;
+                background:#f1fff0;
+                padding:25px;
+                padding-top:70px;
+                min-height:1200px;
+
+            }
+            h1,h2{
+                color:cadetblue;
+
+            }
+            h1{
+                text-align:center;
+
+            }
+            .alert{
+                position:fixed;
+                top:0;
+                left:0;
+                right:0;
+                background:#2d6a4f;
+                color:white;
+                padding:14px;
+                text-align:center;
+                font-weight:bold;
+
+            }
+            .animal{
+                background:#d8f3dc;
+                border:2px solid #2d6a4f;
+                padding:10px;
+                margin:8px o;
+                width:220px;
+            }
+            .moved{
+                position:relative;
+                left:35px;
+                background:#95d5b2;
+
+            }
+            .card{
+                position:relative;
+                background:white;
+                border:2px solid #52b788;
+                border-radius:10px;
+                padding:25px;
+                width:230px;
+                text-align:center;
+
+            }
+            .tag{
+                position:absolute;
+                top:-10px;
+                right:-10px;
+                background:#f77f00;
+                color:white;
+                padding:10px 6px;
+                border-radius:20px;
+                font-size:12px;
+                font-weight:bold;
+
+
+            }
+            .zone{
+                position:sticky;
+                top:50px;
+                color:white;
+                background:#2d6a4f;
+                padding:10px;
+                margin-top:25px;
+                font-weight:bold;
+            }
+            .case{
+                background:white;
+                border:2px solid #52b728;
+                padding:10px;
+                margin:8px 0;
+                width:230px;
+                border-radius:8px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="alert">Zoo rescue alert-Emergency team active | fixed</div>
+        <h1>Zoo rescue tracker</h1>
+        <p style="text-align:center;">Learn css positioning by placing animal cards,rescue tags and sticky zone labels.</p>
+        <h2>Static positioning</h2>
+        <p>Static is the default position .Animal entry occur below one another.</p>
+        <div class="animal">Lion-resting zone</div>
+        <div class="animal">Elephant-water zone</div>
+        <div class="animal">Penguin-ice zone</div>
+        <h2>Relative positining</h2>
+        <p>The rescued animal entry moves slightly using<code>left:35px</code>. </p>
+        <div class="animal">Giraffe-checkup pending</div>
+        <div class="animal">Rescued koala-safe</div>
+        <div class="animal">Zeebra-feeding zone</div>
+        <h2>Absolute positioning</h2>
+        <p>The rescue tag is placed on the animal card using absolute positioning. </p>
+        <div class="card">
+            panda<br>
+            medical checkup complete
+            <div class="tag">safe</div>
+
+        </div>
+        <h2>fixed positioning</h2>
+        <p>The green rescue alert at the top stays fixed even when u scroll</p>
+        <h2>Sticky positioning</h2>
+        <p>The rescue zone label sticks near the top while scrolling</p>
+        <div class="case">Tiger-observation</div>
+        <div class="case">Deer-observation</div>
+        <div class="case">Owl-observation</div>
+        <div class="case">Turtle-observation</div>
+        <div class="case">Rabbit-observation</div>
+        <div class="case">Flamingo-observation</div>
+        <div class="case">Monkey-observation</div>
+        <h2>TOP,RIGHT,BOTTOM,LEFT</h2>
+        <P>Use<code>Top</code>,<code>Right</code>,<code>Bottom</code>,<code>Left</code>to control where position elements appear.</P>
+    </body>
+</html>
+
