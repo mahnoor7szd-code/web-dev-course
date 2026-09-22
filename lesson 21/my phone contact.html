@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My phone contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{background-color:#F0F0F2;}
+        H1{COLOR:#FF5A43;}
+        .card-label{font-size:11px;color:#999;text-transform:uppercase;}
+        pre{font-size:13px;color:#333;}
+    </style>
+</head>
+<body class="py-4">
+    <div class="container">
+        <h1 class="mb-1">MY PHONE CONTACT</h1>
+        <p class="text muted mb-4">Introduction to objects in java script</p>
+        <div class="card shadow-sm mb-3" style="max-width:400px;">
+            <div class="card-body">
+                <h5 class="card-title" style="color:#FF5A43">Contact details</h5>
+                <ul class="list-group list-group-flush">
+                    <Li class="list-group-item">
+                        <span class="card-label d-block">Name</span>
+                        <strong id="name">-</strong>
+                    </Li>
+                    <Li class="list-group-item">
+                        <span class="card-label d-block">Phone</span>
+                        <strong id="phone">-</strong>
+                    </Li>
+                    <Li class="list-group-item">
+                        <span class="card-label d-block">School</span>
+                        <strong id="school">-</strong>
+                    </Li>
+                    <Li class="list-group-item">
+                        <span class="card-label d-block">city</span>
+                        <strong id="city">-</strong>
+                    </Li>
+
+
+                </ul>
+            </div>
+        </div>
+
+    
+    <div class="card shadow-sm mb-3" style="max-width:400px;">
+        <div class="card-body">
+            <h6 style="color:#FF5A43;">Javascript object use</h6>
+            <pre id="codeDisplay"
+                class="bg-light p-3 rounded border mb-0"></pre>
+            
+        </div>
+    </div>
+    </div>
+    <script>
+    //step 1-create the contact objects
+    var mycontact={
+        name:"Mahnoor Azhar",
+        phone:"9879-7689",
+        school:"Station school",
+        city:"rawalpindi"
+    };
+    //step 2-dot rotation
+    var nameE1=document.getElementById("name");
+    var phoneE1=document.getElementById("phone");
+    nameE1.textContent= mycontact.name;
+    phoneE1.textContent= mycontact.phone;
+    
+    //step 3-bracket notation
+    var schoolE1=document.getElementById("school");
+     var cityE1 = document.getElementById("city")
+     schoolE1.textContent=mycontact["school"];
+      cityE1.textContent = mycontact["city"];
+      //show the obj in code box
+      var codeE1=document.getElementById("codeDisplay");
+       codeE1.textContent =
+       'var mycontact ={\n '+
+      'name:"'+ mycontact.name+ '"\n'+
+        'phone:"' + mycontact.phone + '"\n' +
+          'school:"' + mycontact["school"] + '"\n' +
+            'city:"' + mycontact["city"] + '"\n' +
+            '};';
+</script>
+
+
+    
+
+    
+</body>
+</html>
